@@ -1,0 +1,126 @@
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 268px), 1fr));
+  gap: 14px;
+}
+
+.skills__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: clamp(20px, 2.6vw, 28px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 0.045),
+    rgba(255, 255, 255, 0.01)
+  );
+  overflow: hidden;
+  transition: border-color 0.4s var(--ease), transform 0.4s var(--ease),
+    background 0.4s var(--ease);
+}
+
+.skills__card::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(169, 112, 255, 0.55),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.4s var(--ease);
+}
+
+.skills__card:hover {
+  transform: translateY(-3px);
+  border-color: var(--line-accent);
+  background: linear-gradient(
+    165deg,
+    rgba(169, 112, 255, 0.08),
+    rgba(255, 255, 255, 0.012)
+  );
+}
+
+.skills__card:hover::before {
+  opacity: 1;
+}
+
+.skills__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.skills__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.skills__index {
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  direction: ltr;
+}
+
+.skills__caption {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.skills__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+.skills__items li {
+  padding: 5px 11px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.025);
+  font-size: 11.5px;
+  line-height: 1.6;
+  color: var(--text-soft);
+}
+
+.skills__items li[dir="ltr"] {
+  font-family: var(--font-display);
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+.skills__note {
+  margin-top: clamp(24px, 3.4vw, 34px);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 62ch;
+  font-size: 12.5px;
+  line-height: 1.9;
+  color: var(--muted);
+}
+
+.skills__note::before {
+  content: "";
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  margin-top: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 10px 2px var(--glow);
+}

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Illustrated preview of the NAWAH studio website interface">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08111d"/>
+      <stop offset="0.5" stop-color="#070a12"/>
+      <stop offset="1" stop-color="#0d1224"/>
+    </linearGradient>
+    <radialGradient id="glow2" cx="0.22" cy="0.18" r="0.8">
+      <stop offset="0" stop-color="#8fb8ff" stop-opacity="0.34"/>
+      <stop offset="0.65" stop-color="#4a7dff" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#4a7dff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cfe2ff"/>
+      <stop offset="0.5" stop-color="#8fb8ff"/>
+      <stop offset="1" stop-color="#2f4bd8"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.015"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg2)"/>
+  <rect width="1200" height="900" fill="url(#glow2)"/>
+  <rect x="44" y="40" width="1112" height="820" rx="26" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
+
+  <!-- nav -->
+  <circle cx="104" cy="88" r="9" fill="none" stroke="#8fb8ff" stroke-width="1.6"/>
+  <circle cx="104" cy="88" r="3" fill="#8fb8ff"/>
+  <text x="126" y="94" font-family="Space Grotesk, Arial, sans-serif" font-size="17" letter-spacing="5" fill="#eaf1ff">NAWAH</text>
+  <g font-family="Space Grotesk, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#93a3c0">
+    <text x="700" y="93">SERVICES</text>
+    <text x="790" y="93">WORK</text>
+    <text x="856" y="93">PROCESS</text>
+    <text x="938" y="93">FAQ</text>
+  </g>
+  <rect x="1004" y="68" width="104" height="38" rx="19" fill="none" stroke="#8fb8ff" stroke-opacity="0.45"/>
+  <text x="1056" y="92" text-anchor="middle" font-family="Space Grotesk, Arial, sans-serif" font-size="11" letter-spacing="1.5" fill="#dce8ff">START</text>
+  <line x1="92" y1="120" x2="1108" y2="120" stroke="#ffffff" stroke-opacity="0.07"/>
+
+  <!-- headline -->
+  <text x="92" y="238" font-family="IBM Plex Sans Arabic, Segoe UI, sans-serif" font-size="15" fill="#8fb8ff" letter-spacing="1">استوديو تصميم وتطوير</text>
+  <text x="92" y="316" font-family="Space Grotesk, Arial, sans-serif" font-size="60" font-weight="700" fill="#f2f7ff">WE SHAPE</text>
+  <text x="92" y="384" font-family="Space Grotesk, Arial, sans-serif" font-size="60" font-weight="700" fill="#8fb8ff">THE CORE.</text>
+  <text x="92" y="432" font-family="IBM Plex Sans Arabic, Segoe UI, sans-serif" font-size="16" fill="#a9b6cc">هوية بصرية، واجهات، وتجربة رقمية كاملة.</text>
+
+  <rect x="92" y="474" width="178" height="50" rx="25" fill="#8fb8ff"/>
+  <text x="181" y="505" text-anchor="middle" font-family="Space Grotesk, Arial, sans-serif" font-size="13" font-weight="600" fill="#07101f">VIEW WORK</text>
+  <rect x="286" y="474" width="158" height="50" rx="25" fill="none" stroke="#8fb8ff" stroke-opacity="0.35"/>
+  <text x="365" y="505" text-anchor="middle" font-family="Space Grotesk, Arial, sans-serif" font-size="12" fill="#dce8ff">REQUEST A QUOTE</text>
+
+  <!-- orbit graphic -->
+  <g transform="translate(880 400)">
+    <circle r="212" fill="none" stroke="#8fb8ff" stroke-opacity="0.16"/>
+    <circle r="160" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-dasharray="3 9"/>
+    <circle r="104" fill="none" stroke="url(#ring)" stroke-width="1.6" stroke-opacity="0.8"/>
+    <ellipse rx="212" ry="72" fill="none" stroke="#8fb8ff" stroke-opacity="0.28" transform="rotate(-28)"/>
+    <ellipse rx="212" ry="72" fill="none" stroke="#8fb8ff" stroke-opacity="0.16" transform="rotate(34)"/>
+    <circle cx="150" cy="-150" r="7" fill="#cfe2ff"/>
+    <circle cx="-186" cy="60" r="5" fill="#8fb8ff"/>
+    <circle cx="70" cy="200" r="4" fill="#4a7dff"/>
+    <path d="M-26 -26 L 26 26 M26 -26 L -26 26" stroke="#dce8ff" stroke-opacity="0.5" stroke-width="1.4"/>
+  </g>
+
+  <!-- stats strip -->
+  <line x1="92" y1="588" x2="1108" y2="588" stroke="#ffffff" stroke-opacity="0.07"/>
+  <g font-family="Space Grotesk, Arial, sans-serif" fill="#eaf1ff">
+    <text x="92" y="630" font-size="11" letter-spacing="2.5" fill="#7f90ad">SERVICES</text>
+    <text x="92" y="664" font-size="19">Brand systems</text>
+    <text x="92" y="692" font-size="19">Web interfaces</text>
+
+    <text x="352" y="630" font-size="11" letter-spacing="2.5" fill="#7f90ad">PROCESS</text>
+    <text x="352" y="664" font-size="19">Discover</text>
+    <text x="352" y="692" font-size="19">Design &amp; build</text>
+
+    <text x="612" y="630" font-size="11" letter-spacing="2.5" fill="#7f90ad">DELIVERY</text>
+    <text x="612" y="664" font-size="19">Responsive</text>
+    <text x="612" y="692" font-size="19">Documented</text>
+  </g>
+
+  <!-- work cards -->
+  <rect x="92" y="736" width="486" height="86" rx="14" fill="url(#panel)" stroke="#ffffff" stroke-opacity="0.08"/>
+  <rect x="114" y="756" width="46" height="46" rx="10" fill="#8fb8ff" fill-opacity="0.13"/>
+  <text x="178" y="772" font-family="Space Grotesk, Arial, sans-serif" font-size="13" fill="#eaf1ff">CASE 01 — BRAND SITE</text>
+  <text x="178" y="796" font-family="IBM Plex Sans Arabic, Segoe UI, sans-serif" font-size="12" fill="#93a3c0">موقع تعريفي كامل مع نموذج طلب</text>
+
+  <rect x="600" y="736" width="508" height="86" rx="14" fill="url(#panel)" stroke="#ffffff" stroke-opacity="0.08"/>
+  <rect x="622" y="756" width="46" height="46" rx="10" fill="#8fb8ff" fill-opacity="0.13"/>
+  <text x="686" y="772" font-family="Space Grotesk, Arial, sans-serif" font-size="13" fill="#eaf1ff">CASE 02 — PRODUCT SITE</text>
+  <text x="686" y="796" font-family="IBM Plex Sans Arabic, Segoe UI, sans-serif" font-size="12" fill="#93a3c0">واجهة عرض منتجات وأسعار</text>
+
+  <text x="1108" y="840" text-anchor="end" font-family="Space Grotesk, Arial, sans-serif" font-size="10" letter-spacing="3" fill="#ffffff" fill-opacity="0.28">ILLUSTRATIVE PREVIEW</text>
+</svg>

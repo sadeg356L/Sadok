@@ -196,7 +196,7 @@ portfolio/
 
 المشروع جاهز للنشر عبر GitHub Actions:
 
-1. أنشئ مستودعًا على GitHub وادفع المشروع إلى فرع `main`.
+1. المستودع موجود على GitHub: `https://github.com/sadeg356L/Sadok` (فرع `main`).
 2. في المستودع: **Settings → Pages → Build and deployment → Source = GitHub Actions**.
 3. سيستخدم الـworkflow الموجود في `.github/workflows/deploy.yml`:
    `npm ci` → `npm run build` → رفع `dist/` → النشر.
@@ -207,7 +207,8 @@ portfolio/
 `public/.nojekyll` موجود حتى لا يتجاهل GitHub Pages الملفات التي تبدأ بشرطة
 سفلية.
 
-> **مهم:** لم يتم تهيئة git ولا دفع أي شيء بعد. الـworkflow جاهز لكنه لم يُنفَّذ.
+> **مهم:** بعد الدفع، فعّل Pages مرة واحدة من **Settings → Pages → Source =
+> GitHub Actions**. الـworkflow يعمل تلقائيًا عند كل دفع إلى `main`.
 
 ---
 

@@ -1,0 +1,18 @@
+/* App-level only. Section styles live next to their components. */
+
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+
+main {
+  display: block;
+}
+
+@media print {
+  body::before,
+  .grain,
+  .cursor {
+    display: none !important;
+  }
+}

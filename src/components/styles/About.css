@@ -1,0 +1,125 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 64px);
+}
+
+.about__meta {
+  order: 2;
+  padding: clamp(20px, 3vw, 28px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.012)
+  );
+}
+
+.about__meta dl {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+}
+
+.about__meta dl > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.about__meta dl > div:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.about__meta dt {
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+.about__meta dd {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  text-align: end;
+}
+
+.about__note {
+  margin-top: 22px;
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.about__body {
+  order: 1;
+  max-width: 68ch;
+}
+
+.about__body > p {
+  font-size: clamp(16px, 1.7vw, 19px);
+  line-height: 2;
+  color: var(--text-soft);
+}
+
+.about__body > p + p {
+  margin-top: 18px;
+}
+
+.about__body > p:first-child {
+  font-size: clamp(19px, 2.2vw, 25px);
+  line-height: 1.85;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.about__interests {
+  margin-top: clamp(26px, 4vw, 38px);
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.about__interests-label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.about__interests ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.about__interests li {
+  padding: 7px 14px;
+  border: 1px solid var(--line-accent);
+  border-radius: 999px;
+  background: rgba(169, 112, 255, 0.05);
+  font-size: 12.5px;
+  color: var(--accent-soft);
+}
+
+@media (min-width: 901px) {
+  .about__grid {
+    grid-template-columns: minmax(0, 1.55fr) minmax(0, 0.75fr);
+    align-items: start;
+  }
+
+  .about__meta {
+    order: 1;
+    position: sticky;
+    top: calc(var(--header-h) + 28px);
+  }
+
+  .about__body {
+    order: 2;
+  }
+}

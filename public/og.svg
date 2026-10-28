@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="SADOK — Full-Stack Developer, Tunis">
+  <defs>
+    <radialGradient id="glow" cx="78%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#7b3ff2" stop-opacity="0.55"/>
+      <stop offset="45%" stop-color="#4a1f8f" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#06040a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f3e9ff"/>
+      <stop offset="35%" stop-color="#c2a4ff"/>
+      <stop offset="100%" stop-color="#6a2fd1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6d7ff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b98cff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#b98cff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#b98cff" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="#06040a"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <g opacity="0.5">
+    <circle cx="905" cy="315" r="196" fill="none" stroke="url(#ring)" stroke-width="1.4"/>
+    <ellipse cx="905" cy="315" rx="260" ry="92" fill="none" stroke="url(#ring)" stroke-width="1.1" transform="rotate(-22 905 315)"/>
+    <ellipse cx="905" cy="315" rx="260" ry="92" fill="none" stroke="url(#ring)" stroke-width="0.9" transform="rotate(58 905 315)"/>
+  </g>
+
+  <circle cx="905" cy="315" r="74" fill="url(#core)" filter="url(#blur)" opacity="0.9"/>
+  <circle cx="905" cy="315" r="34" fill="#e9dcff" opacity="0.95"/>
+  <circle cx="905" cy="315" r="34" fill="none" stroke="#f6efff" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="1039" cy="228" r="5" fill="#d9c4ff"/>
+  <circle cx="786" cy="404" r="3.5" fill="#b98cff"/>
+  <circle cx="1006" cy="419" r="2.6" fill="#f0e6ff"/>
+
+  <g stroke="url(#line)" stroke-width="1.2" opacity="0.55">
+    <path d="M 105 512 H 470"/>
+  </g>
+
+  <text x="100" y="196" fill="#b98cff" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif" font-size="21" font-weight="600" letter-spacing="7">PORTFOLIO / 2026</text>
+
+  <text x="94" y="352" fill="#f3edff" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif" font-size="164" font-weight="700" letter-spacing="2">SADOK</text>
+
+  <text x="101" y="410" fill="#d9cdf0" font-family="'IBM Plex Sans Arabic','Segoe UI',Arial,sans-serif" font-size="30" font-weight="400">مطوّر ويب متكامل · تونس</text>
+
+  <text x="101" y="470" fill="#a99bc4" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif" font-size="22" font-weight="500" letter-spacing="3">REACT · TYPESCRIPT · THREE.JS</text>
+
+  <g fill="#8f7fb0" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif" font-size="17" letter-spacing="2.5">
+    <text x="101" y="552">FULL-STACK DEVELOPER</text>
+    <text x="101" y="582" fill="#6f6387">AURA-9 / WEBGL</text>
+  </g>
+
+  <g fill="#b98cff" opacity="0.8">
+    <rect x="1075" y="540" width="22" height="2"/>
+    <rect x="1104" y="540" width="22" height="2" opacity="0.6"/>
+    <rect x="1133" y="540" width="22" height="2" opacity="0.3"/>
+  </g>
+</svg>
