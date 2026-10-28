@@ -260,11 +260,10 @@ by accident.
 
 These are real and should be understood before publishing:
 
-1. **Open Graph image uses a relative URL.** A real 1200×630 PNG exists at
-   `public/og.png` (generated from `public/og.svg`) and is referenced by
-   `og:image` as `./og.png`. Some social platforms require an absolute URL;
-   after the site has a domain, change it to
-   `https://<your-domain>/og.png` in `index.html`.
+1. **Open Graph URLs point at GitHub Pages.** `og:image` and `twitter:image`
+   use `https://sadeg356L.github.io/Sadok/og.png`, and the JSON-LD `url` uses the
+   same origin. If the repository is renamed or a custom domain is added, update
+   those URLs in `index.html`.
 2. **Licence.** The repository is derived from a PPL v1.0 template, which
    forbids commercial use and full-site replication. Read `LICENSE` and
    `NOTICE.md` before deploying. This is a licensing constraint, not a bug.
